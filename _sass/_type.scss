@@ -1,0 +1,74 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+%uppercase {
+  text-transform:   uppercase;
+  letter-spacing:   $caps-spacing;
+}
+
+b,
+strong {
+  font-weight:      $font-weight-bold;
+}
+
+.navbar {
+  font-family:      $font-family-sans-serif;
+}
+
+#logo-wrapper {
+  @extend %uppercase;
+  a {
+    color:           $secondary;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+.muted {
+  font-weight:      $font-weight-thin;
+}
+
+#main-container p {
+  text-align:       justify;
+}
+
+.text-uppercase {
+  @extend %uppercase;
+}
+
+.initialism,
+.caps {
+  letter-spacing:  $caps-spacing;
+  text-transform:  small-caps;
+  font-weight:     $font-weight-medium;
+}
+
+.lead {
+  font-style:      italic;
+}
+
+h1, .h1,
+h3, .h3 {
+  letter-spacing:  $caps-spacing;
+  font-weight:     $headings-font-weight;
+}
+
+h2, .h2 {
+  @extend %uppercase;
+  font-weight:     $font-weight-thin;
+}
+
+.caption,
+.caption p {
+  font-size:   $h6-font-size;
+  font-weight: $font-weight-medium;
+}
+
+.panel h2,
+.panel h3,
+.panel h4,
+.caption h2,
+.caption h3,
+.caption h4 {
+  font-size: $font-size-base;
+}

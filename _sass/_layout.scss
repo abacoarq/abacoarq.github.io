@@ -1,0 +1,64 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+#navbar {
+  background-color: $overlay !important;
+  z-index:          $zindex-fixed;
+}
+
+#logo-img {
+  width: 40px;
+  height: 40px;
+  background-image:  url('/assets/images/print-logo.png');
+  background-size:   contain;
+  background-repeat: no-repeat;
+  //@include           text-hide;
+}
+
+#navbarCollapse a:hover {
+  background-color: $navbar-dark-hover-bg;
+}
+
+@include media-breakpoint-down(sm) {
+  .break::before {
+    content: "\A";
+    white-space: pre;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  #navbar {
+    height: 100%;
+  }
+  #logo-wrapper {
+    #logo-img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  #logo-img {
+    width:             100%;
+    height:            auto;
+    padding-top:       100%;
+    background-image:  url('/assets/images/logo.png');
+  }
+  .h1 {
+    width:             100%;
+    height:            auto;
+    padding-top:       65%;
+    background-image:  url('/assets/images/title.png');
+    background-size:   contain;
+    background-repeat: no-repeat;
+    //@include           text-hide;
+  }
+  #navbarCollapse,
+  #navbarCollapse a {
+    display:           block;
+    width:             100%;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .h1 {
+    background-image:  url('/assets/images/title-thin.png');
+  }
+}

@@ -1,0 +1,25 @@
+---
+layout: "title"
+title:  "Página principal"
+---
+
+<div id="carousel" class="carousel carousel-fade slide m-0 p-0 w-100" data-ride="carousel">
+  <div class="carousel-inner">
+    <ol class="carousel-indicators">
+      {% for slide in site.data.carousel %}
+      <li data-target="carousel" data-slide-to="{{ forloop.index0 }}"{% if slide.active == true %} class="active"{% endif %}></li>
+      {% endfor %}
+    </ol>
+    {% for slide in site.data.carousel %}
+    <div id="carousel-{{ slide.slug }}" class="carousel-item{% if slide.active == true %} active{% endif %}">
+      <a href="{{ slide.slug }}/">
+        <img class="d-block text-center w-100" src="/assets/images/{{ slide.image }}" alt="{{ slide.title }}" />
+        <div class="carousel-caption d-none d-md-block offset-lg-2 offset-xl-3">
+          <h2 class="shadow-sm">{{ slide.title }}</h2>
+          <h3 class="lead">{{ slide.lead }}</h3>
+        </div>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</div>

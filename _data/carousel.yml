@@ -1,0 +1,20 @@
+- title:  "Projetos Integrados"
+  active: true
+  slug:   "projetos"
+  image:  "br-df-catetinho-ext-161029-pp-3099.jpg"
+  lead: |
+    Desenvolvimento de projetos desde o planejamento do empreendimento
+    até o recebimento da obra e acompanhamento continuado.
+- title:  "Sustentabilidade"
+  slug:   "sustentabilidade"
+  image:  "br-mg-op-sfrancisco_paula-170513-4568.jpg"
+  lead: |
+    Consultoria e capacitação em gestão de canteiro de obras,
+    manejo de resíduos da construção e etiquetagem de
+    eficiência energética.
+- title:  "Patrimônio Cultural"
+  slug:   "patrimonio"
+  image:  "br-go-pirenopolis-igreja_carmo-180810-pp-7609.jpg"
+  lead: |
+    Pesquisa, projeto e obras de restauro de bens culturais.
+    Arquitetura tradicional contemporânea.

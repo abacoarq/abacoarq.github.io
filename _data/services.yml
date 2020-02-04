@@ -1,0 +1,30 @@
+- title : Projeto de Arquitetura e Urbanismo
+  slug  : projeto
+  url   :
+  image : "arqurb.jpg"
+  desc  :
+- title : Certificações ambientais e energéticas
+  slug  : certifica
+  url   :
+  image : "ituim.jpg"
+  desc  :
+- title : Execução e acompanhamento de obra
+  slug  : obra
+  url   :
+  image : "obra.jpg"
+  desc  :
+- title : Consultoria em integração de projetos
+  slug  : consult
+  url   :
+  image : "mac.jpg"
+  desc  :
+- title : Restauro e gestão do patrimônio cultural
+  slug  : restauro
+  url   :
+  image : "stone.jpg"
+  desc  :
+- title : Pesquisa e produção de conteúdo cultural
+  slug  : pesquisa
+  url   :
+  image : "conteudo.jpg"
+  desc  :

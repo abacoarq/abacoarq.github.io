@@ -1,0 +1,33 @@
+# Site
+title               : "Ábaco Arquitetura & Design Ambiental"
+email               : "abaco@abaco-arquitetura.com.br"
+author              : "Ábaco Arquitetura & Design Ambiental Ltda."
+description         : "Site da Ábaco"
+
+# Where things are
+destination         : "_site"
+collections_dir     : "./"
+collections:
+  services:
+    slug:
+    title:
+    image:
+    desc:
+  portfolio:
+    slug:
+    title:
+    category:
+    output          : true
+    permalink       : "/portfolio/:path/"
+
+# Reading
+safe                : false
+exclude             : ["*.json"]
+
+# Output
+sass:
+  load_paths:
+    - _sass
+    - node_modules
+permalink           : "title/"
+timezone            : "America/Sao_Paulo"

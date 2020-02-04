@@ -1,0 +1,139 @@
+{% include header.html %}
+<div id="jumbotron" class="jumbotron jumbotron-fluid w-100 h-100 m-0 p-3 p-lg-0">
+  <div id="splash" class="container-fluid d-flex flex-column justify-content-center m-0 p-0 col-12 border-bottom align-items-center align-content-center flex-wrap">
+    {{ content }}
+  </div>
+</div>
+<div class="clearfix">&nbsp;</div>
+<main id="mainpage" class="container-fluid col-12 offset-lg-2 offset-xl-3">
+  <div class="row">
+    <div id="services-container" class="col-12 col-lg-10 col-xl-9">
+      <h2 id="services">Do que você precisa?</h2>
+      <div class="d-flex flex-wrap justify-content-around align-items-stretch">
+        {% for card in site.data.services %}
+          <div id="{{ card.slug }}" class="col-12 col-md-5 col-lg-3 border-primary p-0 mb-3 mx-2">
+            <!--<a href="{{ card.url }}">-->
+              <img class="card o-card-link mx-auto my-3 img-fluid d-block border-gray" src="/assets/images/{{ card.image }}" alt="{{ card.title }}" />
+              <h3 class="card-title text-center mx-3">{{ card.title }}</h3>
+            <!--</a>-->
+            <div class="card-body">
+              <p class="card-text text-center">
+                {{ card.desc }}
+              </p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <div class="clearfix">&nbsp;</div>
+  <div class="row">
+    <div id="quem-container" class="col-12 col-lg-10 col-xl-9">
+      <h2 id="quem">Quem somos</h2>
+      <div class="card-deck d-flex justify-content-around">
+        {% for person in site.data.team %}
+        <div id="{{ person.id }}" class="card col-12 col-md-4 col-lg-3 border-primary p-0">
+          <img class="card-img-top mx-0 px-0 border-bottom border-primary" src="/assets/images/{{ person.image }}" alt="{{ person.name }}" />
+          <div class="card-body">
+            <h3 class="card-title">{{ person.name }}</h3>
+            <h4 class="card-subtitle">{{ person.org }}</h4>
+            <p class="card-text">
+              {{ person.bio }}
+            </p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <div class="clearfix">&nbsp;</div>
+  <div class="row">
+    <div id="onde-container" class="col-12 col-lg-10 col-xl-9">
+      <h2 id="onde">Onde estamos</h2>
+      <div class="card-deck d-flex justify-content-around">
+        <div id="contato" class="card col-12 col-md-6 border-primary p-0">
+          <div class="embed-responsive embed-responsive-16by9 card-img-top border-bottom border-primary">
+            <iframe class="embed-responsive-item" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=pt&amp;q=CLN%20212%20Bloco%20D%20Bras%C3%ADlia%20DF+(%C3%81baco%20Arquitetura%20%26%20Design%20Ambiental)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+              <a href="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=CLN%20212%20Bloco%20D%20Bras%C3%ADlia%20DF+(%C3%81baco%20Arquitetura%20%26%20Design%20Ambiental)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed">Ir para o Google Maps</a>
+            </iframe>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Fale conosco</h3>
+<!--
+ -Hidden iframe and general form customization after:
+ -https://blog.webjeda.com/google-form-customize/#google-form-notification
+ -->
+          <script type="text/javascript">var submitted=false;</script>
+          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="$.bootstrapGrowl('Obrigado pelo seu contato! Responderemos em breve.', {type: 'success', offset: {from: 'bottom', amount: 20}, align: 'center', width: 640, delay: 10000})"></iframe>
+            <form class="card-text" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLScrOAhjsOz8oW6l8EgPfH3u2HUM6YFhQ6e3dtN5sirfFx5Gbw/formResponse" autocomplete="on" onsubmit="submitted=true;" target="hidden_iframe">
+              <div class="form-row">
+                <div class="form-group col-lg-6">
+                  <label for="entry.2005620554">Nome</label>
+                  <input type="text" id="entry.2005620554" name="entry.2005620554" class="form-control" required aria-label="Seu nome" autocomplete="name" placeholder="Seu nome" />
+                </div>
+                <div class="form-group col-lg-6">
+                  <label for="entry.1065046570">Empresa</label>
+                  <input type="text" id="entry.1065046570" name="entry.1065046570" class="form-control" aria-label="Sua empresa" autocomplete="company" placeholder="Sua empresa" />
+                </div>
+                <div class="form-group col-lg-6">
+                  <label for="emailAddress">Endereço de e-mail</label>
+                  <input type="email" id="emailAddress" name="entry.2101465986" class="form-control" required aria-label="Seu e-email" aria-describedby="emailHelp" autocomplete="email" placeholder="Seu e-mail" />
+                  <small id="emailHelp" class="form-text text-muted">O seu endereço não será divulgado a terceiros.</small>
+                </div>
+                <div class="form-group col-lg-6">
+                  <label for="entry.1166974658">Número de telefone</label>
+                  <input type="tel" id="entry.1166974658" name="entry.1166974658" class="form-control" aria-label="Seu número de telefone" placeholder="(DDD) 00000&ndash;0000" autocomplete="tel" aria-describedby="phoneHelp" />
+                  <small id="phoneHelp" class="form-text text-muted">Não se esqueça de informar o código DDD.</small>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="entry.1129208894">Assunto</label>
+                <input type="text" id="entry.1129208894" name="entry.1129208894" class="form-control" required aria-label="Do que você precisa?" placeholder="Do que você precisa?" autocomplete="off" />
+              </div>
+              <div class="form-group">
+                <label for="entry.839337160">Mensagem</label>
+                <textarea id="entry.839337160" name="entry.839337160" class="form-control" rows="4" required aria-label="Sua mensagem" placeholder="Sua mensagem" autocomplete="off" aria-describedby="textHelp"></textarea>
+                <small id="textHelp" class="form-text text-muted">Não envie senhas ou dados sigilosos por este formulário.</small>
+              </div>
+              <div id="como" class="form-group">
+                <label for="como">Como chegou até a <strong>Ábaco</strong>?</label>
+                <div class="form-check">
+                  <input name="entry.191330700" id="como-1" class="form-check-input" type="radio" value="Indicação pessoal ou comercial">
+                  <label for="como-1" class="form-check-label">Indicação pessoal ou comercial</label>
+                </div>
+                <div class="form-check">
+                  <input name="entry.191330700" id="como-2" class="form-check-input" type="radio" value="Redes sociais (Facebook, etc.)">
+                  <label for="como-2" class="form-check-label">Redes sociais (Facebook, etc.)</label>
+                </div>
+                <div class="form-check">
+                  <input name="entry.191330700" id="como-3" class="form-check-input" type="radio" value="Pesquisa na internet (Google, etc.)">
+                  <label for="como-3" class="form-check-label">Pesquisa na internet (Google, etc.)</label>
+                </div>
+                <div class="form-check">
+                  <input name="entry.191330700" id="como-4" class="form-check-input" type="radio" value="Outros">
+                  <label for="como-4" class="form-check-label">Outros</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-lg h3 pull-right">Enviar!</button>
+              </div>
+            </form>
+          </div>
+          <div class="card-footer">
+            <p class="card-text">
+              (61) 3547&ndash;5560 ramal 208<br />
+              CLN 212 Bloco D Sala 104<br />
+              Asa Norte · Brasília DF
+            </p>
+          </div>
+        </div>
+        <div id="facebook" class="card col-12 col-md-6 border-primary">
+          <div class="card-body">
+            <h3 class="card-title">Redes sociais</h3>
+            <div id="facebook" class="fb-page" data-href="https://www.facebook.com/abacoarq/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/abacoarq/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/abacoarq/">Ábaco Arquitetura &amp; Design Ambiental</a></blockquote></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+{% include footer.html %}

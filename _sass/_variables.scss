@@ -1,0 +1,66 @@
+// Bootstrap 4.1.3 for Jekyll
+
+// 
+// Color system
+//
+
+$burgundy:  #8a163b;
+$gold:      #efe409;
+$wipeout:   #272727;
+$overlay:   rgba(39,39,39,0.9);
+
+$primary:   $burgundy !default;
+$secondary: $gold !default;
+
+//
+// Typography
+//
+
+@import "fonts";
+
+$font-weight-thin:        100;
+$font-weight-medium:      500;
+$font-weight-bold:        800;
+
+$font-family-serif:       "Joanna Nova", Georgia, "Times New Roman", Times, serif !default;
+$font-family-sans-serif:  "Joanna Sans Nova", "Gill Sans", Verdana, Arial, sans-serif !default;
+$font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace !default;
+
+$font-family-base:        $font-family-serif !default;
+$font-size-base:          1rem;
+
+$h1-font-size:            $font-size-base * 1.7 !default; // ~28px
+$h2-font-size:            $font-size-base * 1.5 !default; // ~21px
+$h3-font-size:            $font-size-base * 1.25 !default; // ~18px
+$h4-font-size:            $font-size-base !default;
+$h5-font-size:            $font-size-base !default;
+$h6-font-size:            $font-size-base * 0.85 !default; // ~12px
+
+$caps-spacing:            0.05em;
+
+$headings-font-family:    $font-family-sans-serif !default;
+$headings-font-weight:    $font-weight-bold !default;
+
+//
+// Navbar
+//
+
+$navbar-dark-color:           $secondary;
+$navbar-dark-active-color:    $secondary;
+$navbar-dark-active-bg:       $overlay;
+$navbar-dark-hover-color:     $secondary;
+$navbar-dark-hover-bg:        $overlay;
+$navbar-light-color:          $primary;
+$navbar-light-active-color:   $primary;
+
+$nav-pills-border-radius:     0;
+$nav-pills-link-hover-bg:     $overlay;
+$nav-pills-link-active-bg:    $overlay;
+$nav-pills-link-active-color: $secondary;
+
+//
+// Layout
+//
+
+$border-radius-lg:            1rem !default;
+$card-border-radius:          $border-radius-lg;
