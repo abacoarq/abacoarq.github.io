@@ -2,8 +2,7 @@ Site da Ábaco Arquitetura
 =========================
 
 Este repositório contém o código do site público da **Ábaco
-Arquitetura**, processado pelo [Jekyll](https://jekyllrb.com) e
-hospedado no GitHub.
+Arquitetura**.
 
 Implementação
 -------------
@@ -15,7 +14,7 @@ Implementação
   detalhes e tutorial no [Markdown
   Guide](https://www.markdownguide.org/);
 - A conversão do conteúdo das páginas para o site é administrada pelo
-  GitHub Pages sempre que o ramo `master` for atualizado no servidor,
-  usando o processador [Jekyll](https://jekyllrb.com); não é
-  necessário fazer manualmente a conversão.
+  [GitHub Pages](https://pages.github.com/) sempre que o ramo `master` for
+  atualizado no servidor, usando o processador [Jekyll](https://jekyllrb.com);
+  não é necessário fazer manualmente a conversão.
 
