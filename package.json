@@ -1,17 +1,17 @@
 {
-  "name": "abaco_site",
+  "name": "@bacoarq/abacoarq.github.io",
   "version": "1.0.0",
-  "description": "",
+  "description": "Site do Ábaco",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ábaco Arquitetura",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^4.1.3",
-    "jquery": "^3.3.1",
-    "popper.js": "^1.14.4"
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.0",
+    "popper.js": "^1.16.0"
   }
 }
