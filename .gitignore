@@ -2,3 +2,7 @@ _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
+Gemfile
+Gemfile.lock
+package-lock.json
+node_modules/
