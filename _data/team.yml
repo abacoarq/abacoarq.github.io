@@ -8,12 +8,12 @@
     Euro-Americano (Unieuro).
   email: "jugehlen@abaco-arquitetura.com.br"
   phone: "(61) 99244–6691"
-- id   : "palazzo"
-  name : "Pedro Paulo Palazzo"
-  image: "palazzo.jpg"
-  org  : "Colaborador · INTBAU"
-  bio: |
-    Arquiteto e Urbanista, membro do INTBAU,
-    professor na Universidade de Brasília.
-  email: "palazzo@abaco-arquitetura.com.br"
-  phone: "(61) 98172–5690"
+#- id   : "palazzo"
+  #name : "Pedro Paulo Palazzo"
+  #image: "palazzo.jpg"
+  #org  : "Colaborador · INTBAU"
+  #bio: |
+    #Arquiteto e Urbanista, membro do INTBAU,
+    #professor na Universidade de Brasília.
+  #email: "palazzo@abaco-arquitetura.com.br"
+  #phone: "(61) 98172–5690"
