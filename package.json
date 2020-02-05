@@ -1,13 +1,13 @@
 {
-  "name": "abaco_site",
+  "name": "@bacoarq/abacoarq.github.io",
   "version": "1.0.0",
-  "description": "",
+  "description": "Site do Ábaco",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ábaco Arquitetura",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^4.1.3",
