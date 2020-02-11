@@ -9,14 +9,14 @@ destination         : "_site"
 collections_dir     : "./"
 collections:
   services:
-    slug:
-    title:
-    image:
-    desc:
+    slug            : "serviços"
+    title           : "Serviços"
+    image           :
+    desc            :
+    permalink       : "services/:path/"
   portfolio:
     slug:
-    title:
-    category:
+    title           :
     output          : true
     permalink       : "/portfolio/:path/"
 
